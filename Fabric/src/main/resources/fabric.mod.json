@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "id": "randommobeffects",
-  "version": "3.2",
+  "version": "3.3",
 
   "name": "Random Mob Effects",
   "description": "Randomly assigns a potion effect to all hostile mobs in the world. With blacklist and modded effects supported.",
   "authors": [ "Rick South" ],
   "contact": {
-    "homepage": "https://curseforge.com/minecraft/mc-mods/random-mob-effects",
-    "sources": "https://github.com/ricksouth/serilum-mc-mod-sources/tree/main/sources/Random%20Mob%20Effects",
-    "issues": "https://github.com/ricksouth/serilum-mc-mods/labels/Mod:%20Random%20Mob%20Effects"
+    "homepage": "https://serilum.com/mod/random-mob-effects",
+    "sources": "https://github.com/Serilum/Random-Mob-Effects",
+    "issues": "https://github.com/Serilum/.issue-tracker/labels/Mod:%20Random%20Mob%20Effects"
   },
 
   "license": "All Right Reserved",
@@ -23,7 +23,7 @@
     "fabric": "*",
     "minecraft": ">=1.20",
     "java": ">=17",
-    "collective": ">=7.3"
+    "collective": ">=7.21"
   },
 
   "custom": {
