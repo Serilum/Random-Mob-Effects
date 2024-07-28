@@ -1,6 +1,7 @@
 package com.natamus.randommobeffects;
 
 import com.natamus.collective.check.RegisterMod;
+import com.natamus.collective.check.ShouldLoadCheck;
 import com.natamus.randommobeffects.neoforge.config.IntegrateNeoForgeConfig;
 import com.natamus.randommobeffects.neoforge.events.NeoForgeAddEffectEvent;
 import com.natamus.randommobeffects.util.Reference;
@@ -18,6 +19,10 @@ import java.io.IOException;
 public class ModNeoForge {
 	
 	public ModNeoForge(IEventBus modEventBus) {
+		if (!ShouldLoadCheck.shouldLoad(Reference.MOD_ID)) {
+			return;
+		}
+
 		modEventBus.addListener(this::loadComplete);
 
 		setGlobalConstants();

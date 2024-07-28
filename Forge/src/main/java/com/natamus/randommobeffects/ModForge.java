@@ -1,6 +1,7 @@
 package com.natamus.randommobeffects;
 
 import com.natamus.collective.check.RegisterMod;
+import com.natamus.collective.check.ShouldLoadCheck;
 import com.natamus.randommobeffects.forge.config.IntegrateForgeConfig;
 import com.natamus.randommobeffects.forge.events.ForgeAddEffectEvent;
 import com.natamus.randommobeffects.util.Reference;
@@ -18,6 +19,10 @@ import java.io.IOException;
 public class ModForge {
 	
 	public ModForge() {
+		if (!ShouldLoadCheck.shouldLoad(Reference.MOD_ID)) {
+			return;
+		}
+
 		IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 		modEventBus.addListener(this::loadComplete);
 
