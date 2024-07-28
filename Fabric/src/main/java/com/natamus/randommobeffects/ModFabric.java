@@ -1,6 +1,7 @@
 package com.natamus.randommobeffects;
 
 import com.natamus.collective.check.RegisterMod;
+import com.natamus.collective.check.ShouldLoadCheck;
 import com.natamus.randommobeffects.events.AddEffectEvent;
 import com.natamus.randommobeffects.util.Reference;
 import com.natamus.randommobeffects.util.Util;
@@ -15,6 +16,10 @@ public class ModFabric implements ModInitializer {
 	
 	@Override
 	public void onInitialize() {
+		if (!ShouldLoadCheck.shouldLoad(Reference.MOD_ID)) {
+			return;
+		}
+
 		setGlobalConstants();
 		ModCommon.init();
 
