@@ -37,7 +37,7 @@ public class ModForge {
 	private void loadComplete(final FMLLoadCompleteEvent event) {
     	try {
 	    	if (Util.setupPotionEffects()) {
-	    		MinecraftForge.EVENT_BUS.register(new ForgeAddEffectEvent());
+	    		MinecraftForge.EVENT_BUS.register(ForgeAddEffectEvent.class);
 	    	}
 		} catch (IOException ex) {
 			System.out.println("[" + Reference.NAME + "] Something went wrong while setting up the list of potion effects.");
