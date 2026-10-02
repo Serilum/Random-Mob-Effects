@@ -1,6 +1,6 @@
-package com.natamus.randommobeffects.forge.events;
+package com.serilum.randommobeffects.forge.events;
 
-import com.natamus.randommobeffects.events.AddEffectEvent;
+import com.serilum.randommobeffects.events.AddEffectEvent;
 import net.minecraftforge.event.entity.EntityJoinLevelEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 

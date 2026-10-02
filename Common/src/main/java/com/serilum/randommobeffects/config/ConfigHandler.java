@@ -1,7 +1,7 @@
-package com.natamus.randommobeffects.config;
+package com.serilum.randommobeffects.config;
 
 import com.natamus.collective.config.DuskConfig;
-import com.natamus.randommobeffects.util.Reference;
+import com.serilum.randommobeffects.util.Reference;
 
 import java.util.Arrays;
 import java.util.HashMap;

@@ -1,4 +1,4 @@
-package com.natamus.randommobeffects.util;
+package com.serilum.randommobeffects.util;
 
 import com.natamus.collective.data.GlobalVariables;
 import com.natamus.collective.functions.DataFunctions;

@@ -1,7 +1,7 @@
-package com.natamus.randommobeffects.fabric.config;
+package com.serilum.randommobeffects.fabric.config;
 
 import com.natamus.collective.config.DuskConfig;
-import com.natamus.randommobeffects.util.Reference;
+import com.serilum.randommobeffects.util.Reference;
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import com.terraformersmc.modmenu.api.ModMenuApi;
 

@@ -1,11 +1,11 @@
-package com.natamus.randommobeffects;
+package com.serilum.randommobeffects;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.randommobeffects.forge.config.IntegrateForgeConfig;
-import com.natamus.randommobeffects.forge.events.ForgeAddEffectEvent;
-import com.natamus.randommobeffects.util.Reference;
-import com.natamus.randommobeffects.util.Util;
+import com.serilum.randommobeffects.forge.config.IntegrateForgeConfig;
+import com.serilum.randommobeffects.forge.events.ForgeAddEffectEvent;
+import com.serilum.randommobeffects.util.Reference;
+import com.serilum.randommobeffects.util.Util;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModLoadingContext;
@@ -35,10 +35,10 @@ public class ModForge {
 	}
 
 	private void loadComplete(final FMLLoadCompleteEvent event) {
-    	try {
-	    	if (Util.setupPotionEffects()) {
-	    		MinecraftForge.EVENT_BUS.register(ForgeAddEffectEvent.class);
-	    	}
+		try {
+			if (Util.setupPotionEffects()) {
+				MinecraftForge.EVENT_BUS.register(ForgeAddEffectEvent.class);
+			}
 		} catch (IOException ex) {
 			System.out.println("[" + Reference.NAME + "] Something went wrong while setting up the list of potion effects.");
 		}

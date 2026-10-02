@@ -1,6 +1,6 @@
-package com.natamus.randommobeffects;
+package com.serilum.randommobeffects;
 
-import com.natamus.randommobeffects.config.ConfigHandler;
+import com.serilum.randommobeffects.config.ConfigHandler;
 
 public class ModCommon {
 

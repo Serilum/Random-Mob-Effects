@@ -1,7 +1,7 @@
-package com.natamus.randommobeffects.forge.config;
+package com.serilum.randommobeffects.forge.config;
 
 import com.natamus.collective.config.DuskConfig;
-import com.natamus.randommobeffects.util.Reference;
+import com.serilum.randommobeffects.util.Reference;
 import net.minecraftforge.client.ConfigScreenHandler;
 import net.minecraftforge.fml.ModLoadingContext;
 

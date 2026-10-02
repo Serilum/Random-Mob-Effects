@@ -1,8 +1,8 @@
-package com.natamus.randommobeffects.events;
+package com.serilum.randommobeffects.events;
 
-import com.natamus.randommobeffects.config.ConfigHandler;
-import com.natamus.randommobeffects.util.Reference;
-import com.natamus.randommobeffects.util.Util;
+import com.serilum.randommobeffects.config.ConfigHandler;
+import com.serilum.randommobeffects.util.Reference;
+import com.serilum.randommobeffects.util.Util;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.Entity;
