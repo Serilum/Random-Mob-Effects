@@ -40,7 +40,10 @@ public class AddEffectEvent {
 		}
 		
 		LivingEntity le = (LivingEntity)entity;
-		MobEffect randomeffect = Util.getRandomEffect();
+		MobEffect randomeffect = Util.getRandomEffect(world);
+		if (randomeffect == null) {
+			return;
+		}
 		
 		MobEffectInstance effectinstance;
 		if (ConfigHandler.hideEffectParticles) {
