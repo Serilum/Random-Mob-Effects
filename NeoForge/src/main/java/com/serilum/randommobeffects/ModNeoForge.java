@@ -5,14 +5,12 @@ import com.natamus.collective.check.ShouldLoadCheck;
 import com.serilum.randommobeffects.neoforge.config.IntegrateNeoForgeConfig;
 import com.serilum.randommobeffects.neoforge.events.NeoForgeAddEffectEvent;
 import com.serilum.randommobeffects.util.Reference;
-import com.serilum.randommobeffects.util.Util;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModLoadingContext;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLLoadCompleteEvent;
 
-import java.io.IOException;
 
 @Mod(Reference.MOD_ID)
 public class ModNeoForge {
@@ -33,13 +31,7 @@ public class ModNeoForge {
 	}
 
 	private void loadComplete(final FMLLoadCompleteEvent event) {
-		try {
-			if (Util.setupPotionEffects()) {
-				NeoForge.EVENT_BUS.register(NeoForgeAddEffectEvent.class);
-			}
-		} catch (IOException ex) {
-			System.out.println("[" + Reference.NAME + "] Something went wrong while setting up the list of potion effects.");
-		}
+		NeoForge.EVENT_BUS.register(NeoForgeAddEffectEvent.class);
 	}
 
 	private static void setGlobalConstants() {

@@ -13,6 +13,7 @@ public class ConfigHandler extends DuskConfig {
 	@Entry(min = 1, max = 50) public static int potionEffectLevel = 1;
 	@Entry public static boolean hideEffectParticles = false;
 	@Entry public static boolean disableCreepers = true;
+	@Entry(registry = "mob_effect") public static String effectBlacklist = "minecraft:instant_health,minecraft:instant_damage,minecraft:invisibility,minecraft:wither,minecraft:glowing,minecraft:levitation,minecraft:bad_omen,minecraft:hero_of_the_village";
 
 	public static void initConfig() {
 		configMetaData.put("potionEffectLevel", Arrays.asList(
@@ -23,6 +24,9 @@ public class ConfigHandler extends DuskConfig {
 		));
 		configMetaData.put("disableCreepers", Arrays.asList(
 			"Creepers can create infinite lingering potion effects which is probably not what you want. When enabled, the mod doesn't give creepers a random effect."
+		));
+		configMetaData.put("effectBlacklist", Arrays.asList(
+			"A comma separated list of effect ids that mobs never get. Use * as a wildcard."
 		));
 
 		DuskConfig.init(Reference.NAME, Reference.MOD_ID, ConfigHandler.class);
